@@ -291,7 +291,7 @@ WireAndPipeDetectionNode::WireAndPipeDetectionNode()
     this->declare_parameter<double>("pedestrian_distance_threshold", 1.0);
     this->declare_parameter<double>("avoid_hold_seconds", 3.0);
 
-    this->declare_parameter<int>("yolo_frame_skip", 1);
+    this->declare_parameter<int>("yolo_frame_skip", 5);
     this->declare_parameter<bool>("publish_annotated_image", true);
     this->declare_parameter<bool>("publish_debug_map_markers", true);
     this->declare_parameter<bool>("filter_above_horizon", true);
